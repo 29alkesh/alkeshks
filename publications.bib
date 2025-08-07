@@ -1,0 +1,90 @@
+%------------------------------------------------
+% Publications are ordered by date
+%------------------------------------------------
+
+@inproceedings{srivastava2024speech,
+  title={Speech-Guided Sequential Planning for Autonomous Navigation using Large Language Model Meta AI 3 (Llama3)},
+  author={Srivastava, Alkesh K and Dames, Philip},
+  booktitle={Proceedings of the 16th International Conference on Social Robotics (ICSR)},
+  address={Odense, Denmark},
+  year={2024},
+  month={October 24--27},
+  url={https://alkeshks.com/publications/Srivastava_Dames_ICSR24.pdf},
+  abstract={In social robotics, a pivotal focus is enabling robots to engage with humans in a more natural and seamless manner. The emergence of advanced large language models (LLMs) such as Generative Pre-trained Transformers (GPTs) and autoregressive models like Large Language Model Meta AI (Llamas) has driven significant advancements in integrating natural language understanding capabilities into social robots. This paper presents a system for speech-guided sequential planning in autonomous navigation, utilizing Llama3 and the Robot Operating System~(ROS). The proposed system involves using Llama3 to interpret voice commands, extracting essential details through parsing, and decoding these commands into sequential actions for tasks. Such sequential planning is essential in various domains, particularly in the pickup and delivery of an object. Once a sequential navigation task is evaluated, we employ DRL-VO, a learning-based control policy that allows a robot to autonomously navigate through social spaces with static infrastructure and (crowds of) people. We demonstrate the effectiveness of the system in simulation experiment using Turtlebot 2 in ROS1 and Turtlebot 3 in ROS2. We conduct hardware trials using a Clearpath Robotics Jackal UGV, highlighting its potential for real-world deployment in scenarios requiring flexible and interactive robotic behaviors.}
+}
+
+@inproceedings{icra23,
+    author = {Alkesh K. Srivastava and George P. Kontoudis and Donald Sofge and Michael Otte},
+    title = {Path-Based Sensors: Will the Knowledge of Correlation in Random Variables Accelerate Information Gathering?},
+    booktitle = {IEEE International Conference on Robotics and Automation (ICRA) - Workshop on Communication Challenges in Multi-Robot Systems: Perception, Coordination, and Learning},
+    address = {London, United Kingdom},
+    year = {2023},
+    month = {Jun.},
+    day = {02},
+    url = {publications/2305.06929.pdf},
+    abstract = {Effective communication is crucial for deploying robots in mission-specific tasks, but inadequate or unreliable communication can greatly reduce mission efficacy, for example in search and rescue missions where communication-denied conditions may occur. In such missions, robots are deployed to locate targets, such as human survivors, but they might get trapped at hazardous locations, such as in a trapping pit or by debris. Thus, the information the robot collected is lost owing to the lack of communication. In our prior work, we developed the notion of a path-based sensor. A path-based sensor detects whether or not an event has occurred along a particular path, but it does not provide the exact location of the event. Such path-based sensor observations are well-suited to communication-denied environments, and various studies have explored methods to improve information gathering in such settings. In some missions it is typical for target elements to be in close proximity to hazardous factors that hinder the information-gathering process. In this study, we examine a similar scenario and conduct experiments to determine if additional knowledge about the correlation between hazards and targets improves the efficiency of information gathering. To incorporate this knowledge, we utilize a Bayesian network representation of domain knowledge and develop an algorithm based on this representation. Our empirical investigation reveals that such additional information on correlation is beneficial only in environments with moderate hazard lethality, suggesting that while knowledge of correlation helps, further research and development is necessary for optimal outcomes.},
+}
+@inproceedings{mrc23-1,
+    author = {Alkesh K. Srivastava and George P. Kontoudis and Donald Sofge and Michael Otte},
+    title = {Estimating Hazardous Locations in Communication-Denied Environments: A Bayesian Network Approach with Path-Based Sensors (Poster)},
+    booktitle = {Maryland Robotics Center (MRC) Research Symposium},
+    address = {College Park, MD, USA},
+    year = {2023},
+    month = {May},
+    day = {25},
+    url = {posters/MRC23_1.pdf},
+    abstract = {This poster presents a Bayesian network approach to estimate hazardous locations in communication-denied environments using path-based sensors. Path-based sensors produce binary observations, indicating whether an event occurred along a path without reporting the precise location of the event. In a lethal communication-denied environment, the proposed approach deploys agents sequentially to infer the location of hazards by observing whether or not the agents survive their journeys along the paths. The approach uses a probabilistic graphical model, specifically a Bayesian network, to formulate a joint distribution among all the random variables in a path, which enables the central entity to compute a more accurate belief update than that used in previous path-based sensor work. Multiple algorithms based on the probabilistic graphical model are proposed and demonstrated to outperform previous information-theoretic planners in similar environments. The study also explores the impact of incorporating additional knowledge about the correlation between hazards and targets on the efficiency of information gathering. To incorporate this knowledge, the study uses a Bayesian network representation of domain knowledge and develops an algorithm based on this representation. The study demonstrates the effectiveness of path-based sensors and Bayesian networks in estimating hazardous locations in communication-denied environments and highlights the potential benefits of incorporating domain knowledge into the planning process.},
+}
+
+@inproceedings{mrc23-2,
+    author = {Alkesh K. Srivastava and George P. Kontoudis and Donald Sofge and Michael Otte},
+    title = {Estimating Hazardous Locations in Communication-Denied Environments: Distributed Multi-Robot Approaches with Path-Based Sensors (Poster)},
+    booktitle = {Maryland Robotics Center (MRC) Research Symposium},
+    address = {College Park, MD, USA},
+    year = {2023},
+    month = {May},
+    day = {25},
+    url = {posters/MRC23_2.pdf},
+    abstract = {Estimating hazardous locations in communication-denied environments is a critical task in various applications. This poster presents three multi-agent information-theoretic planning methods for hazard detection and target localization: Distributed Distributed Entropy Voronoi Partition and Planner (DEVPP), Multi-Agent Distributed Information-Theoretic Planner (MA-DITP), and Multi-Agent Global Information-Theoretic Planner (MA-GITP). DEVPP divides the search space into Voronoi partitions and assigns a robot to each partition, while MA-DITP allows each robot to explore the entire search space. MA-GITP deploys a team of robots simultaneously from the same base station, using expected belief maps to avoid redundant exploration. All methods use sequential Bayesian filtering for updating belief maps, and compute information-theoretic paths based on the expected information gain. The proposed methods are evaluated on simulated search and rescue scenarios, showing promising results in terms of information-gathering efficiency and target localization accuracy.},
+}
+
+@inproceedings{dars22,
+    author = {Alkesh K. Srivastava and George P. Kontoudis and Donald Sofge and Michael Otte},
+    title = {Distributed Multi-Robot Information Gathering using Path-Based Sensors in Entropy-Weighted Voronoi Regions},
+    booktitle = {International Symposium on Distributed Autonomous Robotic Systems (DARS)},
+    address = {Montbéliard, France},
+    year = {2022},
+    month = {Nov.},
+    day = {28},
+    url = {publications/dars22.pdf},
+    abstract = {In this paper, we present a distributed information-gathering algorithm for multi-robot systems that use multiple path-based sensors to infer the locations of hazards within the environment. Path-based sensors output binary observations, reporting whether or not an event (like robot destruction) has occurred somewhere along a path, but without the ability to discern where along a path an event has occurred. Prior work has shown that path-based sensors can be used for search and rescue in hazardous communication-denied environments—sending robots into the environment one-at-a-time. We extend this idea to enable multiple robots to search the environment simultaneously. The search space contains targets (human survivors) amidst hazards that can destroy robots (triggering a path-based hazard sensor). We consider a case where communication from the unknown field is prohibited due to communication loss, jamming, or stealth. The search effort is distributed among multiple robots using an entropy-weighted Voronoi partitioning of the environment, such that during each search round all regions have approximately equal information entropy. In each round, every robot is assigned a region in which its search path is calculated. Numerical Monte Carlo simulations are used to compare this idea to other ways of using path-based sensors on multiple robots. The experiments show that dividing search effort using entropy-weighted Voronoi partitioning outperforms the other methods in terms of the information gathered and computational cost.},
+}
+
+@techreport{parking-control,
+    author = {Alkesh K. Srivastava},
+    title = {Learning-Based Control for Automated Perpendicular Parking in CARLA environment},
+    booktitle = {University of Maryland Technical Report},
+    institution = {University of Maryland},
+    address = {College Park, MD, USA},
+    year = {2022},
+    month = {May},
+    url = {publications/independent_study_technical_report.pdf},
+    abstract = {The existing automatic parking systems deploy a path planner that plans a path to park a vehicle in a particular parking slot. Such path planners subsequently require a path tracking module to track the planned path, but the vehicle’s non-linear dynamic causes the vehicle to deviate from its expected behavior. This paper investigates the use of learning-based control to avoid using a path-tracking module and discusses how a reinforcement learning paradigm could result in emergent intelligent behavior. A Deep-Q Neural Network is used in the CARLA (CAR Learning to Act) simulation environment. Two different methodologies --- a classification model with MPC controller and a Regression Model with PID Controller --- are studied and compared for the perpendicular parking scenario. The promising result in the CARLA simulation environment demonstrates the applicability of this end-to-end reinforcement learning paradigm in the real world.},
+    }
+
+@inproceedings{acoustic-response,
+    author = {Alkesh K. Srivastava and Aashish Tanwar and Varun Joshi and Ram Singh and Gopal Tiwari},
+    title = {Acoustic Response of Nearby Objects for Visually Impaired},
+    booktitle = {National Conference on Recent Trends and Smart Technologies in Electrical Engineering},
+    address = {Jaipur, India},
+    year = {2020},
+    month = {Mar.},
+    day = {07},
+    url = {},
+    abstract = {This paper presents an innovative approach to address the sensory needs of individuals with visual impairment by combining stereo vision technology with the YOLO (You Only Look Once) algorithm. We propose a wearable device that leverages stereo vision to estimate the distance of detected objects. By utilizing the concept of binocular vision, the model enhances depth perception and provides accurate distance estimation. Our objective is to empower individuals with visual impairment to explore and experience the beauty of the natural world, fostering greater independence and an improved quality of life. This paper outlines our efforts to bridge the gap between visual impairment and environmental perception through the integration of stereo vision and computer vision technology.},
+}
+
+
+
+
+
