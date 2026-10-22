@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Alkesh K. Srivastava — academic CV and research website.">
+  <title>Alkesh K. Srivastava | CV &amp; Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; --ink:#151515; --muted:#5b5b5b; --border:#dfdfdf; --accent:#951a32; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100svh; background:#fafafa; color:var(--ink); font-family:Montserrat,Arial,sans-serif; display:flex; flex-direction:column; }
+    header { background:#111; color:#fff; padding:20px 7%; font-size:14px; font-weight:600; letter-spacing:.045em; }
+    header span {font-weight:400; color:#c8c8c8;}
+    main { flex:1; display:grid; place-items:center; padding:38px 18px; }
+    .panel { width:min(100%,470px); padding:44px 36px; background:white; border:1px solid var(--border); border-radius:14px; box-shadow:0 15px 45px rgba(0,0,0,.06); text-align:center; }
+    .eyebrow {text-transform:uppercase; font-size:11px; font-weight:700; letter-spacing:.18em; color:var(--accent); margin:0 0 15px;}
+    h1 {font-family:Lora,Georgia,serif; font-size:clamp(27px,5vw,34px); line-height:1.2; margin:0 0 12px;}
+    .sub {font-size:13px; color:var(--muted); line-height:1.8; margin:0 0 32px;}
+    .actions {display:grid; gap:13px;}
+    .button {display:flex; align-items:center; justify-content:center; min-height:58px; border:2px solid var(--ink); border-radius:7px; font-size:15px; font-weight:700; letter-spacing:.035em; text-decoration:none; transition:background .15s,color .15s,transform .15s;}
+    .button.primary {background:var(--ink); color:#fff;}
+    .button.secondary {background:#fff; color:var(--ink);}
+    .button:hover,.button:focus-visible {background:var(--accent);border-color:var(--accent);color:white;transform:translateY(-1px);}
+    .contact {font-size:12px;margin:27px 0 0; color:var(--muted);}
+    .contact a {color:var(--ink);text-underline-offset:3px;}
+    footer {text-align:center;padding:18px;color:#777;font-size:11px;}
+    @media(max-width:420px){.panel{padding:37px 22px;}header{padding:18px 22px;}}
+    @media(prefers-reduced-motion:reduce){.button{transition:none;}}
+  </style>
+</head>
+<body>
+  <header>SRIVASTAVA, <span>ALKESH</span></header>
+  <main>
+    <section class="panel" aria-labelledby="name">
+      <p class="eyebrow">Robotics · Research · Collaboration</p>
+      <h1 id="name">Alkesh K. Srivastava</h1>
+      <p class="sub">Ph.D. Candidate · Temple University<br>Multi-Robot Systems · Planning · VLMs / LLMs</p>
+      <div class="actions">
+        <a class="button primary" href="https://alkeshks.com/alkesh_cv.pdf" target="_blank" rel="noopener">CV ↗</a>
+        <a class="button secondary" href="https://alkeshks.com/" target="_blank" rel="noopener">Website ↗</a>
+      </div>
+      <p class="contact"><a href="mailto:alkesh@temple.edu">alkesh@temple.edu</a></p>
+    </section>
+  </main>
+  <footer>© 2026 Alkesh K. Srivastava</footer>
+</body>
+</html>
